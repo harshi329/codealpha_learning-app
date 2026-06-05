@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinguaLearn Pro</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+
+            <div class="logo">
+                🌍 LinguaLearn Pro
+            </div>
+
+            <button id="themeBtn" class="theme-btn">
+                🌙
+            </button>
+
+        </header>
+
+        <!-- Dashboard -->
+        <section class="dashboard">
+
+            <div class="card">
+                <h3>🔥 Streak</h3>
+                <div class="value" id="streak">
+                    1 Day
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>📚 Learned</h3>
+                <div class="value" id="learned">
+                    0 Words
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>⭐ Accuracy</h3>
+                <div class="value" id="accuracy">
+                    0%
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Language Selection -->
+        <section class="language-section card">
+
+            <label for="languageSelect">
+                🌐 Select Language
+            </label>
+
+            <select id="languageSelect">
+
+                <option value="spanish">
+                    🇪🇸 Spanish
+                </option>
+
+                <option value="french">
+                    🇫🇷 French
+                </option>
+
+                <option value="german">
+                    🇩🇪 German
+                </option>
+
+            </select>
+
+        </section>
+
+        <!-- Flashcards -->
+        <section class="card">
+
+            <h2>📚 Flashcards</h2>
+
+            <div class="flashcard-container">
+
+                <div class="flashcard" id="flashcard">
+                    Hello
+                </div>
+
+            </div>
+
+            <div class="controls">
+
+                <button class="btn" onclick="prevCard()">
+                    ⬅ Previous
+                </button>
+
+                <button class="btn" onclick="speakWord()">
+                    🔊 Speak
+                </button>
+
+                <button class="btn" onclick="nextCard()">
+                    Next ➡
+                </button>
+
+            </div>
+
+        </section>
+
+        <!-- Progress -->
+        <section class="card progress-section">
+
+            <h2>📈 Learning Progress</h2>
+
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+
+            <p id="progressText">
+                0% Completed
+            </p>
+
+        </section>
+
+        <!-- Quiz -->
+        <section class="card" id="quizSection">
+
+            <h2>📝 Quiz Challenge</h2>
+
+            <p id="question"></p>
+
+            <div id="options"></div>
+
+            <button class="btn submit-btn" onclick="nextQuestion()">
+                Submit Answer
+            </button>
+
+            <p id="quizResult"></p>
+
+        </section>
+
+        <!-- Achievements -->
+        <section class="card">
+
+            <h2>🏆 Achievements</h2>
+
+            <div id="badges">
+                🥉 Beginner
+            </div>
+
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+
+            <p>
+                Made with ❤️ for CodeAlpha Internship
+            </p>
+
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
